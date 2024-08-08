@@ -1,11 +1,12 @@
-package ArrayManipulation;
 
 import java.util.*;
 
 class twodMerge{
     public static void main(String[] args){
-        String[][] arr1 = {{"name", "gender"}, {"Mahesh", "20"}};
-        String[][] arr2 = {{"dob", "home"}, {"30072003", "Tiruttani"}};
+        String[][] arr1 = {{"name", "gender"}, 
+                            {"Mahesh", "20"}};
+        String[][] arr2 = {{"dob", "home"}, 
+                            {"30072003", "Tiruttani"}};
 
         int m = arr1[0].length;
         int n = arr2[0].length;
