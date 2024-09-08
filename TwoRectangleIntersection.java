@@ -30,7 +30,6 @@ public class TwoRectangleIntersection{
         int minY = Math.max(r1_minY,r2_minY);
         int maxY = Math.min(r1_maxY,r2_maxY);
 
-
         //output
         System.out.println(minX +" "+ minY); //1
         System.out.println(minX+ " "+ maxY); //2
