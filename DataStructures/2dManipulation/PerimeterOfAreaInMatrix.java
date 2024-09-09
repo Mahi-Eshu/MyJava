@@ -5,8 +5,8 @@ import java.util.*;
 
 public class PerimeterOfAreaInMatrix {
     public static int surrounding(int[][] m, int i, int j){
-        int r = m.length;
-        int c = m[0].length;
+        int r = m.length; //3
+        int c = m[0].length; //5
         int x = 0;
         if(i>0 && m[i-1][j]==1){
             x++;
@@ -23,8 +23,8 @@ public class PerimeterOfAreaInMatrix {
         return x;
     }
     public static int perimeter(int[][] m){
-        int r = m.length;
-        int c = m[0].length;
+        int r = m.length; //3
+        int c = m[0].length; //5
         int perim=0;
         for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
