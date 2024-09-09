@@ -17,8 +17,8 @@ class PossibleTeams {
         }
         int fullTeams = Math.min(posCount/2, negCount/3);//min(1,1)
         teams+=fullTeams;//1
-        posCount-=fullTeams*2; //0
-        negCount-=fullTeams*3;//1
+        posCount-=fullTeams*2; //2-2=0
+        negCount-=fullTeams*3;//4-3=1
         
         while(posCount>0 || negCount>0){
             int teamSize=0;
