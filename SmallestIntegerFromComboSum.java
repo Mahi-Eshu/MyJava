@@ -1,26 +1,25 @@
 import java.util.*;
 
 class SmallestIntegerFromComboSum {
-    public static int Answer(int[] s){
+    static int SmallestInteger(int[] s){
         Arrays.sort(s);
-        int sum=0;
-
-        for(int val:s){
-            if(val > sum+1){
+        int sum = 0;
+        for(int i : s){
+            if(i > sum+1){
                 return sum+1;
             }
-            sum+=val;
+            sum += i;
         }
         return sum+1;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
         int n = sc.nextInt();
-        int s[] = new int[n];
+        int[] s = new int[n];
         for(int i=0;i<n;i++){
             s[i] = sc.nextInt();
         }
-        System.out.print(Answer(s));
+        System.out.print(SmallestInteger(s));
     }
 }
 
